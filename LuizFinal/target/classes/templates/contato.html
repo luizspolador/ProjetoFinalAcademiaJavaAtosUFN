@@ -1,0 +1,43 @@
+<html layout:decorate="~{layout}">
+<head><meta charset="UTF-8"></head>
+
+<body>
+<section class="layout-content py-4 container" layout:fragment="corpo">
+  <div class="row">
+    <div class="col-10 col-xl-8 mx-auto">
+      <div class="border border-2 rounded p-3">
+        <h4 class=" p-3 text-center text-body">Entre em contato</h4>
+        <form id="contato" action="https://formspree.io/f/moqzggyy" method="post">
+          <div class="form-floating mb-3">
+            <input name="nome" type="text" class="form-control" id="floatingNome" placeholder="Nome">
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input name="email" type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input name="telefone" type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+            <label for="floatingTelefone">Telefone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea name="mensagem" class="form-control" cols="20" rows="7" id="floatingFale" placeholder="Dúvidas e Sugestões"></textarea>
+            <label for="floatingFale">Dúvidas e Sugestões</label>
+          </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Preferência de contato:</option>
+            <option value="1">WhatsApp</option>
+            <option value="2">Email</option>
+            <option value="3">Ligação</option>
+          </select>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg mx-auto w-50 fw-bold mt-3 py-2">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>

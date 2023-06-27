@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head><meta charset="UTF-8"/></head>
+<body>
+<section class="layout-content" layout:fragment="corpo">
+	<nav class="navbar navbar-expand-md bg-light">
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav">
+				<li class="nav-item active my-2">
+					<i class="oi oi-caret-right"></i>
+					<span class="ms-md-2">Cadastrar Usuários</span>
+				</li>
+			</ul>
+
+			<a class="btn btn-primary btn-md text-white ms-2 my-2 my-md-0 btn btn-secondary" th:href="@{/usuarios/listar}" role="button">
+				<span class="oi oi-spreadsheet" title="Cadastro" aria-hidden="true"></span>
+				<span>Listar Usuários</span>
+			</a>
+		</div>
+	</nav>
+
+	<div class="container" id="cadastro">
+
+		<div th:replace="~{fragments/alert}"></div>
+
+		<form th:action="${usuario.id == null} ? @{/usuarios/salvar} : @{/usuarios/editar}"
+			  th:object="${usuario}" method="POST">
+
+			<div th:replace="~{fragments/validacao  :: validacao}"></div>
+
+			<div class="row mb-3">
+				<div class="col-md-6">
+					<div class="form-floating">
+						<input type="text" class="form-control" id="nome" placeholder="Nome Usuario"
+							   autofocus="autofocus" th:field="*{nome}"/>
+						<label for="nome">Nome do Usuário</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-md-4">
+					<label for="projeto" class="form-label">Projeto</label>
+					<select id="projeto" class="form-select" th:field="*{projeto}">
+						<option value="">Selecione</option>
+						<option th:each="p : ${projetos}" th:value="${p.id}" th:text="${p.nome}">Polimorfismo Genético</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-secondary">Salvar</button>
+				</div>
+			</div>
+
+			<input type="hidden" id="id" th:field="*{id}"/>
+		</form>
+	</div>
+</section>
+</body>
+</html>		

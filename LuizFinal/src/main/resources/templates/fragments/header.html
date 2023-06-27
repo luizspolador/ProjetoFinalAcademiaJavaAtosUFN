@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8"></head>
+<body>
+<header th:fragment="cabecalho">
+	<nav class="navbar navbar-expand-md bg-light fixed-top m-0 p-0">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<h1 class="m-0"><img class="d-block" src="/image/logo1.png" alt="logo laboratorio"></h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="navbar-nav fs-5 ">
+					<li class="nav-item">
+						<a class="nav-link fw-bold" th:href="@{/}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-bold" th:href="@{/contato}">Contato</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-bold" th:href="@{/amostras/listar}">Banco de Amostras</a>
+					</li>
+					<li class="nav-item mx-5">
+						<a onclick="document.querySelector('#form-login').submit()" class="nav-link fw-bold" sec:authorize="isAuthenticated()">Logout</a>
+						<form id="form-login" th:action="@{/logout}" method="post"></form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+
+
+
+<!--	<header th:fragment="cabecalho">-->
+<!--		<nav class="navbar navbar-inverse navbar navbar-dark bg-dark fixed-top">-->
+<!--			<div class="container-fluid">-->
+<!--				<div class="navbar-header">-->
+<!--					<button type="button" class="btn btn-dark navbar-toggle pull-left">-->
+<!--						<i class="oi oi-menu"></i>-->
+<!--					</button>-->
+<!--					<a class="navbar-brand " th:href="@{/}">Laboratório de Polimorfismos Genéticos e Imunologia</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</nav>-->
+<!--	</header>-->
+</body>
+</html>
