@@ -10,7 +10,7 @@ Softwares utilizados: IntelliJ Ultimate, XAMPP Control Panel, MySQL Workbench
 ### Contextualização
   Laboratórios de pesquisa científica da área médica de universidades trabalham com bancos de amostras biológicas. Esses bancos de amostras geralmente são organizados em planilhas Excel e são armazenados em serviços de armazenamento em nuvem, como Google Drive ou OneDrive, pelo docente responsável pelo laboratório.
 
-  Com o intuito de melhorar a organização, controle e segurança na gestão do banco de amostras, este projeto final da 5ª Academia Java-UFN busca implementar essa melhoria. A busca por essa melhoria foi baseada na minha experiência como pesquisador científico durante 3 anos e 6 meses da minha primeira graduação, Biomedicina na Universidades Estadual de Londrina.
+  Com o intuito de melhorar a organização, controle e segurança na gestão do banco de amostras, este projeto final da 5ª Academia Java-UFN busca implementar essa melhoria. A busca por essa melhoria foi baseada na minha experiência como pesquisador científico durante 3 anos e 6 meses da minha primeira graduação,  Biomedicina, na Universidades Estadual de Londrina.
 
   O projeto, por enquanto, possui um nome genérico denominado "Cadastro de Projetos, Usuários e Amostras em um Laboratório de Pesquisa".
 
