@@ -1,5 +1,4 @@
 # Projeto Final 5ª Academia Java Atos-UFN
-  Este repositório contém o projeto final desenvolvido durante a 5ª Academia Java da Atos-UFN. O objetivo do projeto é implementar um sistema de gestão de um banco de amostras em um laboratório de pesquisa científica da área médica. O sistema utiliza tecnologias de FrontEnd e BackEnd, além de um banco de dados.
 
 ## Tecnologias utilizadas
 FrontEnd: HTML5, CSS3, Thymeleaf, Bootstrap v. 5.3.0
