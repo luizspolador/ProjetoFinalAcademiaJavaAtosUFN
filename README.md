@@ -24,4 +24,4 @@ Usuário com permissão de acesso:
   Uma navbar está disponível ao lado esquerdo para o cadastro de projetos, usuários e amostras. As três entidades possuem um relacionamento realizado pela JPA Hibernate. O foco principal do projeto é a página de Banco de Amostras, na qual é possível visualizar o usuário e o projeto atrelados à amostra cadastrada.
 
 ### Futuras melhorias
-  Com a aquisição de novos conhecimentos e experiência durante minha trajetória como desenvolvedor, pretendo aperfeiçoar o projeto e torná-lo uma realidade em algum laboratório de pesquisa.
+  Com a aquisição de novos conhecimentos e experiência durante minha trajetória como desenvolvedor, pretendo aperfeiçoa-lo e implementa-lo em algum laboratório de pesquisa.
