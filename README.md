@@ -25,3 +25,4 @@ Usuário com permissão de acesso:
 
 ### Futuras melhorias
   Com a aquisição de novos conhecimentos e experiência durante minha trajetória como desenvolvedor, pretendo aperfeiçoa-lo e tornar realide em algum laboratório de pesquisa.
+  Além diso, em uma futura atualização, buscarei por trabalhar com Desenvolvimento Orientado a Testes para tornar o código mais limpo, flexível e funcional.
